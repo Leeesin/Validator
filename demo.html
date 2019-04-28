@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script src='./index.js'>
+
+</script>
+
+<script>
+  // Validator.hintFn = alert //Validator的输出 message 的提示函数
+  const v = new Validator([
+    {
+      fn: () => {
+        return 1 === 1;//需要验证的表达式，需要返回布尔值，返回 true 时 表示验证通过
+      },
+      message: "姓名必填！"
+    },
+    {
+      fn: () => {
+        return 2 === 2;
+      },
+      message: "年龄必填！"
+    },
+
+  ])
+
+  v.then(res => {
+    alert('验证成功！');
+  })
+</script>
+
+
+</html>
