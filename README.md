@@ -26,8 +26,8 @@ v.then(res => {
 ```
 
 ## API
-hintFn 函数类型 (选填)
-- 静态方法,指定 `Validator`的输出 `message` 的提示函数,可选值为`window.alert`,`console.log`,默认值为`console.log`,也可使用第三方UI库的提示信息,例如`element-ui`的`this.$message;`
+- hintFn 函数类型 (选填)
+  >静态方法,指定 `Validator`的输出 `message` 的提示函数,可选值为`window.alert`,`console.log`,默认值为`console.log`,也可使用第三方UI库的提示信息,例如`element-ui`的`this.$message;`
 
-then 函数类型 (选填)
-- 验证条件全部通过时需要执行的回调函数，
+- then 函数类型 (选填)
+  > 验证条件全部通过时需要执行的回调函数，
